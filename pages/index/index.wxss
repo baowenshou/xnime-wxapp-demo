@@ -1,0 +1,38 @@
+
+@font-face {
+  font-family: 'menkQaganOld';
+  src: url(https://ime.xvlvn.com/assets/fonts/menkQaganOld.ttf) format('opentype');
+  unicode-range: U+E234-EFFF;
+}
+@font-face {
+  font-family: 'mnglartotf';
+  src: url(https://ime.xvlvn.com/assets/fonts/delehi/mnglartotf.ttf) format('opentype');
+  unicode-range: U+1800-18FF;
+}
+.edit-view{
+  margin: auto;
+  font-family: "mnglartotf",'menkQaganOld';
+  white-space: pre-wrap;
+  writing-mode:vertical-lr;
+  -webkit-text-orientation:sideways-right; 
+  box-sizing: border-box;
+  width:90%; height:200px;
+  border:1px solid #ccc;
+  overflow:auto;
+  padding:5px;
+  font-size: 20px;
+  line-height:22px;
+}
+.code-selector{
+  width:90%; height:200px;
+  margin:auto;
+}
+.to-developer{
+  vertical-align:middle;
+  margin-top:15px;
+}
+.supporter{
+  color:#576b95;
+  font-size:12px;
+  margin:10px 0 20px 0;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "keyboard": "plugin://imePlugin/keyboard",
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  }
+}
