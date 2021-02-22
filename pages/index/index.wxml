@@ -1,41 +1,4 @@
-<view class="page__bd">
-  <view class="edit-view" style="font-family:{{selectedCode.fontFamily}},MenkQagan" bindtap="onEdit">{{text}}</view>
+<view class="ecit-view" style="" bindtap="onEdit">{{text}}</view>
 
-    <view class="weui-btn-area">
-      <picker bindchange="bindPickerChange" mode="selector" value="{{item}}" range-key="name" range="{{codeArray}}">
-          <view class="picker"> <button>编码: {{selectedCode.name}}</button></view>
-      </picker>
-      <!-- <view class="weui-cell weui-cell_input">
-        <view class="weui-cell__bd" >
-          复制功能： <switch checked="{{switchCopy}}" bindchange="switchCopyChange"/>
-        </view>
-      </view>
-      <view class="weui-cell weui-cell_input">
-        <view class="weui-cell__bd">
-            粘贴功能： <switch checked="{{switchPaste}}" bindchange="switchPasteChange"/>
-        </view>
-      </view> -->
-      <button class="to-developer" bindtap="toDeveloper" type="primary" plain="true">开发文档 (如何嵌入输入法)</button>
-      <button class="to-developer" bindtap="showShareModal" type="primary" plain="true">分享</button>
-    </view>
-</view>
 
-<official-account></official-account>
-
-<mp-dialog title="" show="{{shareModalShown}}" bindbuttontap="tapDialogButton" buttons="{{shareButtons}}">
-  <image src="../../images/share.jpg" mode="widthFix" style="width:100%;"></image>
-</mp-dialog>
-
-<mp-dialog title="开发文档" show="{{toDeveloperModalShown}}" bindbuttontap="tapDialogButton" buttons="{{toDeveloperButtons}}">
-  <view>介绍</view>
-  <view class="supporter">本插件为开发者准备。小程序中嵌入此插件使微信小程序拥有蒙古文输入编辑能力。
-本插件还有uniapp 组件版、原生js版、angular 组件版。
-输出编码支持蒙科立（国标）、蒙科立旧编码、德力海（国标）、民委新规则（国标）、安卓默认字体对应码（国标）等。更详细内容查看github示例代码。</view>
-  <view>示例代码</view>
-  <view class="supporter">https://github.com/baowenshou/xnime-wxapp</view>
-  <view>技术支持</view>
-  <view class="supporter">微信:baowenshou  邮箱:270552654@qq.com</view>
-</mp-dialog>
-
-<keyboard code-type="{{selectedCode.code}}" copy="{{switchCopy ? 'copy':''}}" paste="{{switchPaste ? 'paste':''}}" 
-  ime-state="{{xnImeState}}" bindimecommit="onCommit"  bindimeclose="onClose" />
+<keyboard id="xvlvn-ime" code-type="standard"  paste="true" ime-state="{{xnImeState}}" bindimecommit="onCommit" bindimeclose="onClose" />

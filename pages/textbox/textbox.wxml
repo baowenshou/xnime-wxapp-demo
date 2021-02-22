@@ -1,0 +1,14 @@
+
+
+
+<xnime-textbox id="textbox-1" class="textbox-1" insert="{{insert}}" focus="{{focusId}}" 
+  cssStyle="font-size:20px;width:158px;line-height:24px;font-family:MinweiQagan;"
+  paste="true" copy="true" multiLine="true" bindstatechange="onEditorChange"  bindinputchange="onTextBoxInput" />
+
+<xnime-textbox id="textbox-2" class="textbox-2" insert="{{insert}}" focus="{{focusId}}"
+  cssStyle="font-size:20px;max-width:58px;line-height:24px;font-family:MinweiQagan;"
+  paste="true" copy="true" multiLine="false" bindstatechange="onEditorChange"  bindinputchange="onTextBoxInput"/>
+
+
+
+<xnime-keyboard id="xvlvn-ime" code-type="minwei" isOpen="{{keyboardOpen}}" bindoutput="onOutput" />

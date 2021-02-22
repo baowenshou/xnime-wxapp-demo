@@ -5,17 +5,8 @@
   font-style: normal;
 }
 
-.ecit-view{
-  font-family: Mongolian;
-  white-space: pre-wrap;
-  writing-mode:vertical-lr;
-  -webkit-text-orientation:sideways-right; 
-  -webkit-overflow-scrolling: touch;
-  width:90%; height:200px;
-  border:1px solid #ccc;
-  margin:67px auto;
-  overflow:auto;
-  padding:5px;
-  font-size: 20px;
-  line-height:22px;
+.textbox-1, .textbox-2{
+  display:inline-block;
+  margin:5px;
+  height:200px;
 }

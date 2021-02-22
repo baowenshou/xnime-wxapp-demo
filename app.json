@@ -1,21 +1,14 @@
 {
-	"pages": [
-		"pages/index/index"
-	],
-	"plugins": {
-		"imePlugin": {
-				"version": "2.1.1",
-				"provider": "wx2a9f47650eb7495d"
-		}
-	},
-	"useExtendedLib": {
-    "weui": true
+  "pages": [
+   
+    "pages/index/index",
+    "pages/textbox/textbox"
+  ],
+  "plugins": {
+    "imePlugin": {
+      "version": "3.0.5", 
+      "provider": "wx2a9f47650eb7495d"
+    }
   },
-	"window": {
-		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#ffffff",
-		"navigationBarTitleText": "讯诺蒙古文输入法",
-		"navigationBarTextStyle": "black"
-	},
-	"sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json"
 }

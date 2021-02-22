@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "xnime-keyboard": "plugin://imePlugin/xnime-keyboard",
+    "xnime-textbox": "plugin://imePlugin/xnime-textbox"
+  }
+}
